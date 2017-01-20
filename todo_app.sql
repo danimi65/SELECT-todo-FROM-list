@@ -32,4 +32,6 @@ INSERT INTO "tasks" (title, description) VALUES ('study PostgreSQL', 'read all t
 
 SELECT "title" FROM "tasks" WHERE "completed_at" IS NULL;
 
+UPDATE "tasks" SET "completed_at" = now() WHERE "title" = 'Study SQL';
+
 SELECT * FROM "tasks";
